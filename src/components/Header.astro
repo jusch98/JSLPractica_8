@@ -1,0 +1,43 @@
+---
+import '../styles/global.css' 
+
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BLOG</title>
+  </head>
+  <body>
+    <section
+      class="relative bg-stone-900 text-white text-center min-h-[80vh] overflow-hidden "
+    >
+      <video
+        autoplay
+        muted
+        loop
+        class="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="video1.mp4" type="video/mp4" />
+        Tu navegador no soporta videos.
+      </video>
+
+      <!-- Overlay oscuro para mejor contraste -->
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+
+      <!-- Contenido de la sección -->
+      <div class="relative z-10 px-6 py-12">
+        <h1 class="text-9xl  font-BadComa">THE WEST</h1>
+
+        <a
+          href="#BodyBotton"
+          class="mt-10 inline-block bg-stone-800 text-white px-2 rounded-full text-xl hover:bg-black hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out focus:outline-none focus:ring-4 font-BadComa"
+        >
+          Nuestros Planes
+        </a>
+      </div>
+    </section>
+  </body>
+</html>

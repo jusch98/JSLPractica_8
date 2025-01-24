@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "id": 0,
+      "title": "Virginia",
+      "description": "Embárcate en un viaje lleno de historia y paisajes impresionantes. Disfruta de encantadores pueblos, exuberantes parques nacionales y una cálida hospitalidad que solo Virginia puede ofrecer.",
+      "image": "https://images.pexels.com/photos/4275885/pexels-photo-4275885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "slug": "post-0"
+    },
+    {
+      "id": 1,
+      "title": "Tennessee",
+      "description": "Sumérgete en el alma de la música y el arte en Tennessee. Explora Nashville, hogar del country, y Memphis, cuna del blues, mientras disfrutas de una cultura rica y vibrante.",
+      "image": "https://images.pexels.com/photos/733995/pexels-photo-733995.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "slug": "post-1"
+    },
+    {
+      "id": 2,
+      "title": "Minnesota",
+      "description": "Explora lagos cristalinos y bosques frondosos en Minnesota, el estado de los 10,000 lagos. Una mezcla perfecta entre naturaleza serena y ciudades culturales como Minneapolis.",
+      "image": "https://images.pexels.com/photos/808465/pexels-photo-808465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "slug": "post-2"
+    },
+    {
+      "id": 3,
+      "title": "Ohio",
+      "description": "Descubre la mezcla única de historia industrial y experiencias modernas en Ohio. Desde vibrantes ciudades como Cleveland hasta la tranquilidad de Amish Country.",
+      "image": "https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "slug": "post-3"
+    },
+    {
+      "id": 4,
+      "title": "Washington",
+      "description": "Explora paisajes deslumbrantes en Washington, desde la majestuosidad del Monte Rainier hasta el vibrante corazón de Seattle. Una región llena de aventuras y cultura.",
+      "image": "https://images.pexels.com/photos/739349/pexels-photo-739349.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "slug": "post-4"
+    },
+    {
+      "id": 5,
+      "title": "Texas",
+      "description": "Vive el espíritu audaz de Texas, donde el encanto del viejo oeste se encuentra con modernas ciudades vibrantes. Desde las colinas hasta los ranchos, Texas te espera con los brazos abiertos.",
+      "image": "https://images.pexels.com/photos/1368382/pexels-photo-1368382.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "slug": "post-5"
+    }
+  ]
+}

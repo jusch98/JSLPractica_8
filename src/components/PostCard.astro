@@ -1,0 +1,33 @@
+---
+const { title, description, image, slug } = Astro.props;
+import LikeButton from './LikeButton.jsx'; // Importamos el componente LikeButton
+---
+
+<section id="ultimasPublicaciones">
+  <div class="bg-stone-900 p-4 rounded shadow-lg text-gray-200">
+    
+    <!-- Título de la publicación -->
+    <h2 class="text-2xl text-center text-white font-BadComa">{title}</h2>
+    
+    <!-- Imagen de la publicación con tamaño fijo -->
+    <div class="relative w-full h-48">
+      <img 
+        src={image} 
+        alt={title} 
+        class="object-cover w-full h-full rounded-md my-4"
+      />
+    </div>
+    
+    <!-- Descripción recortada -->
+    <p>{description.substring(0, 150)}...</p>
+    
+    <!-- Enlace para leer más -->
+    <a href={`/blog/${slug}`} class="text-orange-600 hover:underline mt-7 block font-BadComa text-xl">Leer más</a>
+
+    
+    <!-- Botón de "Me gusta" -->
+    <div class="mt-7">
+      <LikeButton slug={slug} /> 
+    </div>
+  </div>
+</section>

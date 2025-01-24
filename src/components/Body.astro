@@ -1,0 +1,63 @@
+---
+/* Importa tus imágenes desde URLs */
+const images = [
+  'https://images.pexels.com/photos/106606/pexels-photo-106606.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  'https://images.pexels.com/photos/1109967/pexels-photo-1109967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  'https://images.pexels.com/photos/1450079/pexels-photo-1450079.jpeg?auto=compress&cs=tinysrgb&w=600',
+  'https://images.pexels.com/photos/795188/pexels-photo-795188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+];
+
+---
+
+<section id = "BodyBotton"class="body-astro relative overflow-hidden h-96">
+  <!-- Slider Container -->
+  <div class="slider flex transition-transform duration-500 h-full w-full">
+    {images.map((image, index) => (
+      <div
+        key={index}
+        class="slide flex-shrink-0 w-full h-full bg-cover bg-center"
+        style={`background-image: url('${image}');`}
+      ></div>
+    ))}
+  </div>
+
+  <!-- Text Content -->
+  <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
+    <h2 class="text-4xl font-BadComa">Welcome to the West</h2>
+    <p class="text-xl mt-4"></p>
+  </div>
+
+  <!-- Controls -->
+  <div class="controls absolute inset-y-0 flex justify-between items-center w-full px-4">
+    <button
+      id="prev"
+      class="control bg-black bg-opacity-50 text-white text-2xl p-2 rounded-full hover:bg-opacity-75"
+    >
+      ❮
+    </button>
+    <button
+      id="next"
+      class="control bg-black bg-opacity-50 text-white text-2xl p-2 rounded-full hover:bg-opacity-75"
+    >
+      ❯
+    </button>
+  </div>
+</section>
+
+<script>
+  let index = 0;
+
+  // Selección de elementos
+  const slider = document.querySelector('.slider');
+  const slides = document.querySelectorAll('.slide');
+  const prevButton = document.getElementById('prev');
+  const nextButton = document.getElementById('next');
+
+  function showSlide(i) {
+    index = (i + slides.length) % slides.length; // Ajuste circular
+    slider.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  prevButton.addEventListener('click', () => showSlide(index - 1));
+  nextButton.addEventListener('click', () => showSlide(index + 1));
+</script>
